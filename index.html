@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello World!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bootstrap 4.0.0-beta.2 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+        integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <!-- main style -->
+    <link rel="stylesheet" type="text/css" href="css/main.css?v=2018.09.20">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107490980-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments) };
+        gtag('js', new Date());
+
+        gtag('config', 'UA-107490980-1');
+    </script>
+</head>
+
+<body>
+    <div class='site-container'>
+        <!-- select style button -->
+        <div class="btn-group" id="changestyle">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <span id="selstyle">Style Space</span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#" data-val="default">Style Block</a></li>
+                <li><a class="dropdown-item" href="#" data-val="space">Style Space</a></li>
+            </ul>
+        </div>
+        <section class='intro'>
+            <div id='particles-js'></div>
+            <div class='wrap'>
+                <div class='content'>
+                    <div class="profile-card">
+                        <div class="header">
+                            <!-- avatar -->
+                            <a><img src="img/avatar.png" class="unselectable"></a>
+                            <!-- name -->
+                            <h1 class="unselectable">Nityan Suman</h1>
+                            <!-- role -->
+                            <h2 class="unselectable">Data Scientist @ <strong>Noodle.ai</strong></h2>
+                        </div>
+                        <div class="profile-bio">
+                            <p class="unselectable">
+                                Building world
+                                <br>one model at a time.
+                            </p>
+                        </div>
+                        <!-- social links -->
+                        <ul class="profile-social-links">
+                            <li><a target="_blank" href="https://www.linkedin.com/in/kumar-nityan-suman/">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li><a target="_blank" href="https://github.com/nityansuman/">
+                                    <i class="fa fa-github"></i></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="parallax-window" data-parallax="scroll" data-image-src="img/underground-bg0.jpg"></div>
+        <section class="am-section">
+            <div class="about-me">
+                <div class="text-center">
+                    <!-- <img class="unselectable" src="img/about-me.png" height="100" width="550"> -->
+                    <centre class="about-me-logo">ABOUT ME</centre>
+                    <br><br>
+                </div>
+                <div class="clearfix"></div>
+                <div class="about-me__content" id="terminal-start">
+                    <p>Last login: Fri Jul 02 10:15:00 2020 from bb7b1901d99e8b26cov19d2-debdb7d7f24b3158cf.server.beast</p>
+                    <pre style="border: none;">
+         __|  __|_  )
+         _|  (     /   Beast Linux AMI
+        ___|\___|___|
+
+        Linux version 2020.07 is available.
+</pre>
+                    <div class="command">
+                        <!-- email -->
+                        <p>echo $email</p>
+                        <span class="hideme"><strong>E-mail: </strong>nityan.suman@gmail.com</span>
+                        <!-- phone -->
+                        <p>echo $phone</p>
+                        <span class="hideme"><strong>Phone: </strong>(+91)-990267-XXXX</span>
+                        <!-- address -->
+                        <p>echo $address</p>
+                        <span class="hideme"><strong>Address: </strong>Bengaluru, Karnataka, India</span>
+                        <!-- education -->
+                        <p>echo $education</p>
+                        <span class="hideme"><strong>Degree: </strong> B.E. in Information Science & Engineering<br>
+                            <strong>College: </strong>PES University | 2014 - 2018
+                        </span>
+                        <!-- eligible_to_work -->
+                        <p>echo $skills</p>
+                        <span class="hideme">
+                                            <strong>Languages: </strong>Python - PostgresSQL - HTML & CSS<br>
+                                            <strong>Packages/Frameworks: </strong>Tensorflow - Keras - Catboost - Scikit Learn - Pandas - Numpy -...<br>
+                                            <strong>Technologies: </strong>Machine Learning - Deep Learning<br>
+                                            <strong>Domain: </strong>Natural Language Processing - Computer Vision - Time Series<br>
+                                            <strong>Programming: </strong>Object Oriented Programming - Functional Programming - Parallel Programming -...<br>
+                                            <strong>Base: </strong>Data Structures - Algorithms
+                                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="parallax-window-one" data-parallax="scroll" data-image-src="img/underground.jpg"></div>
+        <section class="flx-center">
+            <!-- <div class="text-center">
+                <div class="one-block">
+                    <h3>Block #: 1</h3>
+                    <br>
+                    <label>Company:</label><b>Noodle.ai</b>
+                    <label>Title:</label><b>Data Scientist</b></p>
+                    <label>Stack:</label>Pyton, PostgresSQL, Tensorflow, Catboost, Scikit-Learn</p>
+                    <label>Time:</label>September 2019 - Present</p>
+                    <br>
+                    <small><label>Hash: </label>9d169ad4b0875680b2256b5f8cfe9c02b977fe5cc2f1659ffdf63fc9955f4b45</small>
+                </div>
+                <div class="one-block">
+                    <h3>Block #: 2</h3>
+                    <br>
+                    <label>Company:</label><b>Youplus Inc.</b>
+                    <label>Title:</label><b>Associate Data Scientist -> Data Scientist</b></p>
+                    <label>Stack:</label>Pyton, PostgresSQL, Tensorflow, Catboost, Scikit-Learn</p>
+                    <label>Time:</label>April 2019 - August 2019</p>
+                    <br>
+                    <small><label>Hash: </label>9d169ad4b0875680b2256b5f8cfe9c02b977fe5cc2f1659ffdf63fc9955f4b45</small>
+                </div>
+            </div> -->
+        </section>
+
+        <div class="parallax-window-two" data-parallax="scroll" data-image-src="img/batman3.jpg">
+            <h3 class="footer-note">Thanks for being here!</h3>
+        </div>
+        <div class="footer">
+        </div>
+        <!-- =================== script =================== -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+        <script src="lib/parallax.js-1.4.2/parallax.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+
+        <!-- particles js -->
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+        <!-- bootstrap 4.0.0-beta.2 -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+            crossorigin="anonymous"></script>
+
+        <!-- main js file -->
+        <script src="js/main.js"></script>
+
+        <script>
+            $(document).ready(function () {
+
+                // random style on page load
+                let display_text = ''
+                switch (Math.round(Math.random() * 2 + 1)) {
+                    case 1:
+                        styleDefault();
+                        display_text = 'Style Block'
+                        break;
+                    case 2:
+                        styleSpace();
+                        display_text = 'Style Space'
+                        break;
+                    default:
+                        styleSpace();
+                        display_text = 'Style Block'
+                }
+                $('#selstyle').text(display_text);
+
+                $('#changestyle .dropdown-menu a').click(function () {
+                    var style = $(this).data('val');
+                    switch (style) {
+                        case 'default':
+                            styleDefault();
+                            break;
+                        case 'space':
+                            styleSpace();
+                            break;
+                        default:
+                            styleSpace();
+                    }
+                    $('#selstyle').text($(this).text());
+                });
+
+                /*-------------------------------
+                    terminal linux style
+                -------------------------------*/
+                var about_me_content_displayed = false;
+                var $lines = $('.command p');
+                $lines.hide();
+
+                var lineContents = [];
+                var output = [];
+
+                var terminal = function () {
+                    var skip = 0;
+                    typeLine = function (idx) {
+                        idx == null && (idx = 0);
+                        var element = $lines.eq(idx);
+                        var content = lineContents[idx];
+                        if (typeof content == "undefined") {
+                            $('.skip').hide();
+                            return;
+                        }
+                        var charIdx = 0;
+                        var typeChar = function () {
+                            var rand = Math.round(Math.random() * 150) + 20;
+
+                            setTimeout(function () {
+                                var char = content[charIdx++];
+                                element.append(char);
+                                if (typeof char !== "undefined")
+                                    typeChar();
+                                else {
+                                    element.append('<br/><span class="output">' + output[idx] + '</span>');
+                                    element.removeClass('active');
+                                    typeLine(++idx);
+                                }
+                            }, skip ? 0 : rand);
+                        }
+                        element.append('[ec2-user@ip-127-0-0-1 ~]$ ').addClass('active');
+                        typeChar();
+                    }
+
+                    $lines.each(function (i) {
+                        lineContents[i] = $(this).text();
+                        output[i] = $(this).next('span').html();
+                        $(this).text('').show();
+                    });
+                    typeLine();
+                }
+
+                $(window).scroll(function () {
+                    var hT = $('#terminal-start').offset().top,
+                        hH = $('#terminal-start').outerHeight(),
+                        wH = $(window).height(),
+                        wS = $(this).scrollTop() - 250;
+                    if (wS > (hT + hH - wH) && !about_me_content_displayed) {
+                        about_me_content_displayed = true;
+                        terminal();
+                    }
+                });// end terminal style -------
+
+                $('section').each(function () {
+                    $('.slider-navigation').prepend('<div class="tick"></div>');
+                });
+
+                $('.tick').on('click', function () {
+                    var tickIndex = $(this).index();
+                    $('body').scrollTop($(window).height() * tickIndex);
+                });
+
+                updatePos();
+            }); // end document ready -------
+
+            var isDragging = false;
+            var sliderTop, pointerPos, currentSection;
+
+            var bodyHeight = $('body').height();
+            var sliderHeight = $('.slider-navigation').height();
+            var elementHeight = $('section').height();
+            var sectionAmount = $('section').length;
+            var scale = (bodyHeight - (elementHeight)) / (sliderHeight - $('.nav-pointer').outerHeight());
+
+            var waitForFinalEvent = (function () {
+                var timers = {};
+                return function (callback, ms, uniqueId) {
+                    if (!uniqueId) {
+                        uniqueId = "resize";
+                    }
+                    if (timers[uniqueId]) {
+                        clearTimeout(timers[uniqueId]);
+                    }
+                    timers[uniqueId] = setTimeout(callback, ms);
+                };
+            })();
+
+            function updatePos() {
+                currentSection = $(window).scrollTop() / elementHeight;
+                currentSectionNum = Math.ceil(currentSection + 0.01);
+                sliderTop = $(window).scrollTop() / scale;
+                $('.nav-pointer').css('top', sliderTop).text(currentSectionNum + '/' + sectionAmount);
+            }
+
+            function sliderMove(e) {
+                $('body').scrollTop(parseInt(e) * scale);
+            }
+
+            $(window).scroll(function () {
+                if (!isDragging) {
+                    updatePos();
+                }
+            });
+
+            $(window).resize(function () {
+                waitForFinalEvent(function () {
+                    bodyHeight = $('body').height();
+                    sliderHeight = $('.slider-navigation').height();
+                    elementHeight = $('section').height();
+                    sectionAmount = $('section').length;
+                    scale = (bodyHeight - (elementHeight)) / (sliderHeight - $('.nav-pointer').outerHeight());
+
+                    updatePos();
+                }, 500, "resizing");
+            });
+        </script>
+</body>
+</html>
