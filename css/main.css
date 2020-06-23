@@ -260,16 +260,19 @@ body.dragging .nav-pointer {
 .parallax-window {
     min-height: 250px;
     background: transparent;
+    background-image: url("../img/underground-bg1.jpg");
 }
 
 .parallax-window-one {
   min-height: 250px;
   background: transparent;
+  background-image: url("../img/underground.jpg");
 }
 
 .parallax-window-two {
   min-height: 350px;
   background: transparent;
+  background-image: url("../img/batman3.jpg");
 }
 
 .parallax-window-half {
