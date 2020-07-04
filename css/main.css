@@ -38,15 +38,11 @@
 /* ----------------------
 	Timeline
 ------------------------*/
-.wrap {
-  margin: 0 auto;
-  max-width: 1140px;
-  padding: 0 20px;
-}
-
 .header {
   position: relative;
   z-index: 999;
+  width: 100%;
+  height: 100%;
 }
 
 section {
@@ -204,7 +200,7 @@ body.dragging .nav-pointer {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
-  border: 1px lime;
+  border: 1px transparent;
   border-style: solid dotted solid dotted;
 }
 
@@ -248,7 +244,7 @@ body.dragging .nav-pointer {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("../img/bg1.jpg");
+  background-image: url("../img/main-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -288,7 +284,7 @@ body.dragging .nav-pointer {
 .footer-note {
   padding-top: 200px;
   text-align: center;
-  color: white;
+  color: yellow;
   font-size: 50px;
   font-family: "PermanentMarker";
 }
@@ -370,437 +366,96 @@ body.dragging .nav-pointer {
 /* ----------------------
   name card
 ------------------------*/
-.profile-card h1,
-.profile-card h2 {
-  font-weight: 500;
-  margin: 0px 0px 0px 0px;
-}
-
-.profile-card h1 {
-  font-size: 25px;
-}
-
-.profile-card h2 {
-  font-size: 15px;
-  font-family: "Roboto-regular";
-}
-
-.profile-card p {
-  margin: 0px;
-}
-
-.profile-card {
-  background: red;
-  width: 100px;
-  height: 100px;
+.profile {
+  width: 100%;
+  height: auto;
   position: absolute;
-  left: 50%;
-  top: 30%;
-  z-index: 100;
-  overflow: hidden;
-  opacity: 0;
-  margin-top: 50px;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  box-shadow: 0px 3px 6px rgba(255, 255, 255, 0.233), 0px 3px 6px rgb(0, 0, 0);
-  animation: init 0.5s 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, moveDown 1s 0.8s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards, moveUp 1s 1.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards, materia 0.5s 2.7s cubic-bezier(0.86, 0, 0.07, 1) forwards;
+  top: 35%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.445);
 }
 
-.profile-card .header h1 {
-  color: #FFFFFF;
-  font-family: "Press2S";
-  font-size: large;
-}
-
-.profile-card .header h2 {
+.profile-info {
   color: #FFFFFF;
 }
 
-.profile-card .header a {
+.profile-info a {
   display: inline-block;
   text-align: center;
   position: relative;
   margin: 20px 30px;
 }
 
-.profile-card .header a:after {
+.profile a:after {
   position: absolute;
   content: "";
   bottom: 2px;
   right: 2px;
   width: 20px;
   height: 20px;
-  -webkit-transform: scale(0);
-  transform: scale(0);
-  -webkit-animation: scaleIn 0.3s 3.5s ease forwards;
-  animation: scaleIn 0.3s 3.5s ease forwards;
 }
 
-.profile-card .header a > img {
+.profile a > img {
   width: 140px;
   max-width: 100%;
   border-radius: 50%;
-  transition: box-shadow 0.3s ease;
   box-shadow: 0px 0px 0px 8px rgba(255, 255, 255, 0.274);
 }
 
-.profile-card .header a:hover > img {
+.profile a:hover > img {
   box-shadow: 0px 0px 0px 12px rgba(255, 255, 255, 0.1);
 }
 
-.profile-card .profile-bio {
-  width: 175px;
-  height: 120px;
-  display: inline-block;
-  background: transparent;
-  text-align: center;
-  opacity: 0;
-  -webkit-animation: moveIn 1s 3.1s ease forwards;
-  animation: moveIn 1s 3.1s ease forwards;
-}
-
-.profile-card .profile-bio p{
-  font-family: "PermanentMarker";
+.profile-info h1, h2{
   color: #FFFFFF;
-  padding-top: 20px;
+  font-family: "Press2S";
+  font-size: large;
 }
 
-.profile-social-links {
-  display: block;
-  float: right;
-  text-align: center;
-  opacity: 0;
-  padding-top: 20px;;
-  box-sizing: border-box;
-  animation: moveIn 1s 3.1s ease forwards;
+.profile-info p {
+  color: #FFFFFF;
+  font-family: "PermanentMarker";
+  font-size: large;
 }
 
-.profile-social-links li {
+.profile-info ul {
+  list-style: none;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+.profile-info li {
   list-style: none;
   float: left;
   width: 50%;
   text-align: center;
 }
 
-.profile-social-links li:hover {
+.profile-info li:hover {
   list-style: none;
   float: left;
   width: 50%;
   text-align: center;
 }
 
-.profile-social-links li a {
+.profile-info li a {
   display: inline-block;
   position: relative;
   overflow: hidden !important;
-  background: transparent;
 }
 
-.profile-social-links li a i {
+.profile-info li a i {
   position: relative;
   z-index: 1;
   font-size:40px;
   color:rgb(255, 255, 255);
 }
 
-.profile-social-links li a i:hover {
+.profile-info li a i:hover {
   color:rgb(110, 255, 70);
 }
 
-.profile-social-links li a img,
-.profile-social-links li a svg {
+.profile-info li a img,
+.profile-info li a svg {
   width: 24px;
-}
-
-@-webkit-keyframes init {
-  0% {
-    width: 0px;
-    height: 0px;
-  }
-  100% {
-    width: 56px;
-    height: 56px;
-    margin-top: 0px;
-    opacity: 1;
-  }
-}
-
-@keyframes init {
-  0% {
-    width: 0px;
-    height: 0px;
-  }
-  100% {
-    width: 56px;
-    height: 56px;
-    margin-top: 0px;
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes puff {
-  0% {
-    top: 100%;
-    height: 0px;
-    padding: 0px;
-  }
-  100% {
-    top: 50%;
-    height: 100%;
-    padding: 0px 100%;
-  }
-}
-
-@keyframes puff {
-  0% {
-    top: 100%;
-    height: 0px;
-    padding: 0px;
-  }
-  100% {
-    top: 50%;
-    height: 100%;
-    padding: 0px 100%;
-  }
-}
-
-@-webkit-keyframes borderRadius {
-  0% {
-    -webkit-border-radius: 50%;
-  }
-  100% {
-    -webkit-border-radius: 0px;
-  }
-}
-
-@keyframes borderRadius {
-  0% {
-    -webkit-border-radius: 50%;
-  }
-  100% {
-    border-radius: 0px;
-  }
-}
-
-@-webkit-keyframes moveDown {
-  0% {
-    top: 50%;
-  }
-  50% {
-    top: 40%;
-  }
-  100% {
-    top: 100%;
-  }
-}
-
-@keyframes moveDown {
-  0% {
-    top: 50%;
-  }
-  50% {
-    top: 40%;
-  }
-  100% {
-    top: 100%;
-  }
-}
-
-@-webkit-keyframes moveUp {
-  0% {
-    background: red;
-    top: 100%;
-  }
-  50% {
-    top: 40%;
-  }
-  100% {
-    top: 50%;
-    background: lime;
-  }
-}
-
-@keyframes moveUp {
-  0% {
-    background: red;
-    top: 100%;
-  }
-  50% {
-    top: 40%;
-  }
-  100% {
-    top: 50%;
-    background: lime;
-  }
-}
-
-@-webkit-keyframes materia {
-  0% {
-    background: lime;
-  }
-  50% {
-    -webkit-border-radius: 4px;
-  }
-  100% {
-    width: 440px;
-    height: 280px;
-    background: lime;
-    -webkit-border-radius: 4px;
-  }
-}
-
-@keyframes materia {
-  0% {
-    background: lime;
-  }
-  50% {
-    border-radius: 4px;
-  }
-  100% {
-    width: 440px;
-    height: 280px;
-    background: lime;
-    border-radius: 4px;
-  }
-}
-
-@-webkit-keyframes moveIn {
-  0% {
-    margin-top: 50px;
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    margin-top: -20px;
-  }
-}
-
-@keyframes moveIn {
-  0% {
-    margin-top: 50px;
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    margin-top: -20px;
-  }
-}
-
-@-webkit-keyframes scaleIn {
-  0% {
-    -webkit-transform: scale(0);
-  }
-  100% {
-    -webkit-transform: scale(1);
-  }
-}
-
-@keyframes scaleIn {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-@-webkit-keyframes ripple {
-  0% {
-    transform: scale3d(0, 0, 0);
-  }
-  50%,
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes ripple {
-  0% {
-    transform: scale3d(0, 0, 0);
-  }
-  50%,
-  100% {
-    transform: scale3d(1, 1, 1);
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@media screen and (min-aspect-ratio: 4/3) {
-  body {
-    background-size: cover;
-  }
-  body:before {
-    width: 0px;
-  }
-  @ -webkit-keyframes puff {
-    0% {
-      top: 100%;
-      width: 0px;
-      padding-bottom: 0px;
-    }
-    100% {
-      top: 50%;
-      width: 100%;
-      padding-bottom: 100%;
-    }
-  }
-  @keyframes puff {
-    0% {
-      top: 100%;
-      width: 0px;
-      padding-bottom: 0px;
-    }
-    100% {
-      top: 50%;
-      width: 100%;
-      padding-bottom: 100%;
-    }
-  }
-}
-
-.profile-card .header {
-  width: auto;
-  height: 260px;
-  top: 20px;
-  padding: 20px 20px;
-  display: block;
-  float: none;
-  border-right: none;
-  background: transparent;
-}
-.profile-card .profile-bio {
-  width: auto;
-  height: auto;
-  padding: 55px 20px 35px;
-  display: block;
-  float: none;
-  background: transparent;
-}
-.profile-social-links {
-  width: 100%;
-  display: block;
-  float: none;
-  background: transparent;
-}
-
-@keyframes materia {
-  0% {
-    background: lime;
-  }
-  50% {
-    border-radius: 4px;
-  }
-  100% {
-    width: 320px;
-    height: 460px;
-    background-image: url("../img/bg2.jpg");
-    border-radius: 4px;
-    background-repeat: no-repeat;
-    background-size: cover;  
-  }
 }
