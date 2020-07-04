@@ -25,38 +25,28 @@
 
 <body>
     <div class='site-container'>
-        <!-- select style button -->
+
         <div class="btn-group" id="changestyle">
             <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
                 aria-expanded="false">
-                <span id="selstyle">Style Space</span>
+                <span id="selstyle">Space</span>
             </button>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#" data-val="default">Style Block</a></li>
-                <li><a class="dropdown-item" href="#" data-val="space">Style Space</a></li>
+                <li><a class="dropdown-item" href="#" data-val="default">Neural</a></li>
+                <li><a class="dropdown-item" href="#" data-val="space">Space</a></li>
             </ul>
         </div>
+
         <section class='intro'>
             <div id='particles-js'></div>
-            <div class='wrap'>
-                <div class='content'>
-                    <div class="profile-card">
-                        <div class="header">
-                            <!-- avatar -->
-                            <a><img src="img/avatar.png" class="unselectable"></a>
-                            <!-- name -->
-                            <h1 class="unselectable">Nityan Suman</h1>
-                            <!-- role -->
-                            <h2 class="unselectable">Data Scientist @ <strong>Noodle.ai</strong></h2>
-                        </div>
-                        <div class="profile-bio">
-                            <p class="unselectable">
-                                Building world
-                                <br>one model at a time.
-                            </p>
-                        </div>
-                        <!-- social links -->
-                        <ul class="profile-social-links">
+                <div class= "profile">
+                    <div class="profile-info">
+                        <a><img src="img/avatar.png" class="unselectable"></a>
+                        <h1 class="unselectable">Nityan Suman</h1>
+                        <h2 class="unselectable">Data Scientist @ <strong>Noodle.ai</strong></h2>
+                        <p class="unselectable">Building world one model at a time.</p>
+                        
+                        <ul>
                             <li><a target="_blank" href="https://www.linkedin.com/in/kumar-nityan-suman/">
                                     <i class="fa fa-linkedin"></i>
                                 </a>
@@ -68,13 +58,13 @@
                         </ul>
                     </div>
                 </div>
-            </div>
         </section>
-        <div class="parallax-window" data-parallax="scroll" data-image-src="img/underground-bg1.jpg"></div>
+
+        <div class="parallax-window" data-parallax="scroll" data-image-src="img/code-bg.jpg"></div>
+
         <section class="am-section">
             <div class="about-me">
                 <div class="text-center">
-                    <!-- <img class="unselectable" src="img/about-me.png" height="100" width="550"> -->
                     <centre class="about-me-logo">ABOUT ME</centre>
                     <br><br>
                 </div>
@@ -117,37 +107,20 @@
                 </div>
             </div>
         </section>
-        <div class="parallax-window-one" data-parallax="scroll" data-image-src="img/underground.jpg"></div>
+
+        <div class="parallax-window-one" data-parallax="scroll" data-image-src="img/code-bg.jpg"></div>
+        
         <section class="flx-center">
-            <!-- <div class="text-center">
-                <div class="one-block">
-                    <h3>Block #: 1</h3>
-                    <br>
-                    <label>Company:</label><b>Noodle.ai</b>
-                    <label>Title:</label><b>Data Scientist</b></p>
-                    <label>Stack:</label>Pyton, PostgresSQL, Tensorflow, Catboost, Scikit-Learn</p>
-                    <label>Time:</label>September 2019 - Present</p>
-                    <br>
-                    <small><label>Hash: </label>9d169ad4b0875680b2256b5f8cfe9c02b977fe5cc2f1659ffdf63fc9955f4b45</small>
-                </div>
-                <div class="one-block">
-                    <h3>Block #: 2</h3>
-                    <br>
-                    <label>Company:</label><b>Youplus Inc.</b>
-                    <label>Title:</label><b>Associate Data Scientist -> Data Scientist</b></p>
-                    <label>Stack:</label>Pyton, PostgresSQL, Tensorflow, Catboost, Scikit-Learn</p>
-                    <label>Time:</label>April 2019 - August 2019</p>
-                    <br>
-                    <small><label>Hash: </label>9d169ad4b0875680b2256b5f8cfe9c02b977fe5cc2f1659ffdf63fc9955f4b45</small>
-                </div>
-            </div> -->
+            <div class="text-center">
+                <centre class="about-me-logo">Projects</centre>
+                <br><br>
+            </div>
         </section>
 
-        <div class="parallax-window-two" data-parallax="scroll" data-image-src="img/batman3.jpg">
+        <div class="parallax-window-two" data-parallax="scroll" data-image-src="img/code-bg.jpg">
             <h3 class="footer-note">Thanks for being here!</h3>
         </div>
-        <div class="footer">
-        </div>
+
         <!-- =================== script =================== -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
@@ -174,15 +147,15 @@
                 switch (Math.round(Math.random() * 2 + 1)) {
                     case 1:
                         styleDefault();
-                        display_text = 'Style Block'
+                        display_text = 'Neural'
                         break;
                     case 2:
                         styleSpace();
-                        display_text = 'Style Space'
+                        display_text = 'Space'
                         break;
                     default:
-                        styleSpace();
-                        display_text = 'Style Block'
+                        styleDefault();
+                        display_text = 'Neural'
                 }
                 $('#selstyle').text(display_text);
 
