@@ -322,12 +322,6 @@ body.dragging .nav-pointer {
   font-family: "Press2S";
 }
 
-@media only screen and (max-width: 1100px) {
-  .hide-mobile {
-    display: none;
-  }
-}
-
 .one-block:hover {
   background: lime;
   color: black;
